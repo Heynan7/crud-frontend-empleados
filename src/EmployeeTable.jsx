@@ -46,7 +46,7 @@ function EmployeeTable() {
         idsucursal: editEmployee.idsucursal,
       };
 
-      await axios.put(`http://localhost:8800/apiv2/empleado/${editEmployee.idempleado}`, updatedEmployee);
+      await axios.put(`http://52.15.228.215:8800/apiv2/empleado/${editEmployee.idempleado}`, updatedEmployee);
 
       fetchEmployees();
       setEditEmployee(null);

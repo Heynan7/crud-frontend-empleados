@@ -20,7 +20,7 @@ const EmployeeForm = () => {
         e.preventDefault();
         console.log('Datos a enviar:', formData); // Imprime los datos en la consola
         try {
-            await axios.post('http://localhost:8800/apiv2/empleado', formData); // Asegúrate de que la URL sea correcta
+            await axios.post('http://52.15.228.215:8800/apiv2/empleado', formData); // Asegúrate de que la URL sea correcta
             alert('Empleado agregado exitosamente.');
             // Resetea el formulario
             setFormData({
