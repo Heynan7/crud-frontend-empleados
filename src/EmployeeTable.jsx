@@ -12,7 +12,7 @@ function EmployeeTable() {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://localhost:8800/apiv2/empleado/empleadosucursal');
+      const response = await axios.get('http://52.15.228.215:8800/apiv2/empleado/empleadosucursal');
       setEmployees(response.data);
     } catch (error) {
       console.error("Error fetching employees:", error);
@@ -21,7 +21,7 @@ function EmployeeTable() {
 
   const handleDeleteEmployee = async (id) => {
     try {
-      await axios.delete(`http://localhost:8800/apiv2/empleado/${id}`);
+      await axios.delete(`http://52.15.228.215:8800/apiv2/empleado/${id}`);
       fetchEmployees();
     } catch (error) {
       console.error("Error deleting employee:", error);
